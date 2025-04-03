@@ -1,4 +1,4 @@
-# FastAPI Project
+# GPTest Project
 
 This project is an API built using FastAPI, PostgreSQL, Redis, Celery, Alembic, and SQLAlchemy.
 
@@ -22,15 +22,15 @@ This project is an API built using FastAPI, PostgreSQL, Redis, Celery, Alembic, 
 
 1. Clone the project:
 ```bash
-git clone https://your-repository-url.git
-cd fastapi-project
+git https://github.com/iamerkankeskin/fastapi-gptest.git
+cd gptest
 ```
 
 2. Configure the `.env` file (if necessary):
 ```
 DATABASE_URL=postgresql://postgres:postgres@postgres:5432/fastapi_db
 REDIS_URL=redis://redis:6379/0
-APP_NAME=FastAPI Project
+APP_NAME=GPTest Project
 ENVIRONMENT=development
 DEBUG=True
 ```
