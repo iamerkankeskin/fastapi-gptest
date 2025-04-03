@@ -82,14 +82,11 @@ fastapi-project/
 ├── alembic/              # Database migrations
 ├── app/                  # Main application directory
 │   ├── api/              # API routes
-│   ├── core/             # Core settings and configuration
 │   ├── db/               # Database related code
 │   ├── models/           # SQLAlchemy models
 │   ├── schemas/          # Pydantic schemas
-│   ├── services/         # Business logic
 │   ├── tasks/            # Celery tasks
 │   └── main.py           # Main FastAPI application
-├── tests/                # Tests
 ├── .env                  # Environment variables
 ├── alembic.ini           # Alembic configuration
 ├── docker-compose.yml    # Docker Compose configuration
