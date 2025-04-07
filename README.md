@@ -1,6 +1,6 @@
 # GPTest Project
 
-This project is an API built using FastAPI, PostgreSQL, Redis, Celery, Alembic, and SQLAlchemy.
+An advertising campaign platform where customers are called on a specific date and time and 30-second audio recordings are played. The platform can call many users at the same time during busy campaign periods.
 
 ## Technology Stack
 
