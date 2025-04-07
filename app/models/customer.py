@@ -9,5 +9,5 @@ class Customer(BaseModel):
 
     first_name = Column(String(50), nullable=False)
     last_name = Column(String(50), nullable=False)
-    phone = Column(String(20), nullable=False)
+    phone = Column(String(20), index=True, unique=True, nullable=False)
     last_call_time = Column(DateTime, default=datetime.now(timezone.utc))

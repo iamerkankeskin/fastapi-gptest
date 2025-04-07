@@ -8,7 +8,6 @@ from alembic import context
 from app.models.customer import Customer
 from app.models.call import Call
 from app.models.campaign import Campaign
-from app.models.phone_line import PhoneLine
 from app.models.recording import Recording
 
 
