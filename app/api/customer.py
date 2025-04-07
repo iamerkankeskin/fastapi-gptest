@@ -5,7 +5,7 @@ from app.schemas.customer import CreateCustomerRequest
 from app.models.customer import Customer
 from fastapi import HTTPException, status
 
-router = APIRouter(prefix="/customer", tags=["Campaigns"])
+router = APIRouter(prefix="/customer", tags=["Customers"])
 
 @router.post("/", response_model=CreateCustomerRequest)
 async def create_customer(customer: CreateCustomerRequest, db: Session = Depends(get_db)):

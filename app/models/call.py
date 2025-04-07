@@ -16,10 +16,11 @@ class Call(BaseModel):
     
     customer_id = Column(Integer, ForeignKey("customers.id"), index=True)
     campaign_id = Column(Integer, ForeignKey("campaigns.id"), index=True)
+    phone_line_id = Column(Integer, ForeignKey("phone_lines.id"), index=True)
     call_time = Column(DateTime, default=datetime.now(timezone.utc))
     status = Column(Enum(CallStatus), nullable=False, default=CallStatus.ANSWERED)
+    end_time = Column(DateTime, nullable=True)
     
     customer = relationship("Customer", back_populates="calls")
     campaign = relationship("Campaign", back_populates="calls")
-    
-    recording = relationship("Recording", uselist=False, back_populates="call")
+    phone_line = relationship("PhoneLine", back_populates="phone_lines")

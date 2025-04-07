@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.campaign import router as campaign_router
 from app.api.customer import router as customer_router
+from app.api.call import router as call_router
 
 app = FastAPI(
     title="GP Test Project",
@@ -21,6 +22,7 @@ app.add_middleware(
 
 app.include_router(campaign_router)
 app.include_router(customer_router)
+app.include_router(call_router)
 
 @app.get("/health")
 async def health_check():
