@@ -39,7 +39,8 @@ logs/
 *.sqlite3
 
 # Alembic
-alembic/versions/*.py
+# alembic/versions/*.py
+alembic/versions/__pycache__/
 !alembic/versions/__init__.py
 
 # Docker
